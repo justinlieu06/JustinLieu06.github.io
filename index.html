@@ -83,16 +83,65 @@
 
     <!-- Portfolio Grid -->
     <section class="bg-light" id="portfolio">
-      <div class="container">
+      <!-- <div class="container"> -->
+
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Portfolio</h2>
             <h3 class="section-subheading text-muted">A Quick Rundown</h3>
           </div>
         </div>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/portfolio/viewtube.png" alt="" width="400" height="400" >
+              </a>
+              <div class="portfolio-caption">
+                <h4>ViewTube</h4>
+                <p class="text-muted">YouTube Clone</p>
+              </div>
+            </div>
+  
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/portfolio/travelpack.png" alt="" width="400" height="400">
+              </a>
+              <div class="portfolio-caption">
+                <h4>TravelPack</h4>
+                <p class="text-muted">Travel App</p>
+              </div>
+            </div>
+  
+            <div class="col-md-4 col-sm-6 portfolio-item">
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img class="img-fluid" src="img/portfolio/codingwizard.png" alt="" width="400" height="400">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Coding Wizard</h4>
+                <p class="text-muted">16bit RPG</p>
+              </div>
+            </div>
+          </div>
+
         <div class="row">
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
@@ -105,8 +154,9 @@
               <p class="text-muted">SCU Hackathon</p>
             </div>
           </div>
+
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
@@ -119,8 +169,9 @@
               <p class="text-muted">Game Replica</p>
             </div>
           </div>
+
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
                   <i class="fa fa-plus fa-3x"></i>
@@ -133,6 +184,8 @@
               <p class="text-muted">Simulation</p>
             </div>
           </div>
+        </div>
+
     </section>
 
     <!-- About -->
@@ -336,6 +389,126 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">ViewTube</h2>
+                  <p class="item-intro text-muted">YouTube Clone</p>
+                    <a href="https://viewtube-fsp.herokuapp.com/#/" target="_blank"><img class="img-fluid d-block mx-auto" src="img/portfolio/viewtube.png" alt="" width="500px" height="500px"></a>
+                  <ul>
+                    <li>Integrated upload form that appends video and image files to a form data object so files can be streamlined to AWS S3 for scalability and file upload services</li>
+                    <li>Implemented a video search React component via Active Record comparison methods to render relevant videos</li>
+                    <li>Developed modular modal component containing React links for an easier developer experience</li>
+                  </ul>
+                  <ul class="list-inline">
+                    <li>Date: September 2019</li>
+                    <li>Location: San Francisco</li>
+                    <li>Category: Programming</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">TravelPack</h2>
+                  <p class="item-intro text-muted">Travel App</p>
+                    <a href="https://travel-pack.herokuapp.com" target="_blank"><img class="img-fluid d-block mx-auto" src="img/portfolio/travelpack.png" alt="" width="500px" height="500px"></a>
+                  <ul>
+                    <li>
+                      Collaborated on a team to design a diverse CRUD app while mastering Git workflow and safe, efficient branching
+                    </li>
+                    <li>
+                      Designed user back-end authentication with BCrypt for password encryption, and ensured users can only call delete HTTP request on Mongoose models embedded under the appropriate group
+                    </li>
+                    <li>
+                      Structured code to establish direct uploads to AWS from the Node.js backend
+                    </li>
+                  </ul>
+                  <ul class="list-inline">
+                    <li>Date: September 2019</li>
+                    <li>Location: San Francisco</li>
+                    <li>Category: Programming</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Coding Wizard</h2>
+                  <p class="item-intro text-muted">16 bit RPG</p>
+                    <a href="https://justinlieu06.github.io/codingwizard/" target="_blank"><img class="img-fluid d-block mx-auto" src="img/portfolio/codingwizard.png" alt="" width="500px" height="500px"></a>
+                  <ul>
+                    <li>2d tile based game created with pure JavaScript</li>
+                    <li>Contains game entities each with unique properties such as direction and speed</li>
+                    <li>Game map changes based off of player interaction</li>
+                  </ul>
+                  <ul class="list-inline">
+                    <li>Date: October 2019</li>
+                    <li>Location: San Francisco</li>
+                    <li>Category: Programming</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">Hack for Humanity 2018</h2>
                   <p class="item-intro text-muted">SCU Evacuation Map</p>
                     <a href="https://jlieu21.github.io/" target="_blank"><img class="img-fluid d-block mx-auto" src="img/portfolio/H4H.jpg" alt="" width="500px" height="500px"></a>
@@ -356,8 +529,8 @@
       </div>
     </div>
 
-    <!-- Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -390,8 +563,8 @@
       </div>
     </div>
 
-    <!-- Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
