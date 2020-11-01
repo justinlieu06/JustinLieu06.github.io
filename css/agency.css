@@ -1,3 +1,6 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap");
+
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -696,6 +699,46 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 div.resume{
-    display: block
-    margin: 0 auto
+    display: block;
+    margin: 0 auto;
+}
+
+.line {
+  position: relative;
+  width: 16em;
+  height: 1.2em;
+  margin: 0 auto;
+  margin-top: 0.25em;
+  border-right: 2px solid rgba(255, 255, 255, 0, 0.75);
+  font-size: 3em;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  /* font-family: 'Patrick Hand SC', cursive; */
+  background-color: green;
+  color: blue;
+}
+
+/* animation */
+.anim-typewriter {
+  animation: typewriter 3s steps(40) 1s 1 normal both,
+  blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 16em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
