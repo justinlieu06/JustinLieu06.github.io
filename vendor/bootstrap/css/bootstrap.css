@@ -6136,7 +6136,7 @@ button.bg-danger:focus {
 
 .bg-light {
   background-color: #f8f9fa !important;
-  background-image: url('../../../img/bluebackground.gif');
+  background-image: url('../../../img/bluebackground.jpg');
 }
 
 a.bg-light:hover, a.bg-light:focus,
@@ -8974,3 +8974,41 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap");
+
+.line {
+  position: relative;
+  width: 12em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0, 0.75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  /* font-family: 'Patrick Hand SC', cursive; */
+}
+
+/* animation */
+.anim-typewriter {
+  animation: typewriter 3s steps(40) 1s 1 normal both,
+  blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 12em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
